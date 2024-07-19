@@ -14,11 +14,10 @@ async def reputation(phone_number):
 
         try:
             info = f"\n [{GREEN}>{WHITE}] Reputation: {reputation[0].text.strip()}"
-
         except Exception:
             info = f"\n [-] No reputation found "
-
         print(info)
-
+        return info
     else:
-        pass
+        info = f"\n [-] No reputation found "
+        return info

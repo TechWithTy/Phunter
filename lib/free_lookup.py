@@ -23,3 +23,4 @@ async def free(phone_number):
 
         else:
             continue
+    return info_dict 

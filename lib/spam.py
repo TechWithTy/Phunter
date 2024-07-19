@@ -13,6 +13,7 @@ async def spamcalls(p_n):
 
     if r.status_code == 200:
         print(f"  └── {RED}!{WHITE} Spammer")
-
+        return True
     else:
         print(f"  └── {GREEN}>{WHITE} Not spammer")
+        return False
