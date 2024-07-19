@@ -1,9 +1,8 @@
 from .Requests import *
 import random
 from .text import *
+from .useragent import user_agent
 
-with open("useragents.txt", "r") as user:
-    user_agent = user.read().split('\n')
 
 async def spamcalls(p_n):
     print(f"\n [{GREEN}>{WHITE}] Spamcalls")

@@ -2,9 +2,8 @@ from .text import *
 from .Requests import Request
 import random
 import json
+from .useragent import  user_agent as  agent
 
-with open("useragents.txt", 'r') as user:
-    agent = user.read().split('\n')
 
 def version():
     with open('config.json', 'r') as json_file:

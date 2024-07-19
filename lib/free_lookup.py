@@ -2,9 +2,7 @@ from .Requests import Request
 from bs4 import BeautifulSoup
 from .text import *
 import random
-
-with open("useragents.txt", 'r') as user:
-    agent = user.read().split('\n')
+from .useragent import user_agent as agent
 
 async def free(phone_number):
     r = await Request("https://free-lookup.net/{}".format(phone_number), headers={'user-agent': random.choice(agent)}).get()

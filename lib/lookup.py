@@ -5,7 +5,7 @@ from .reputation import *
 from .free_lookup import free
 from .spam import spamcalls
 
-from lib.text import *
+from .text import *
 
 async def lookup(phone_number):
     print()
